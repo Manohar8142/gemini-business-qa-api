@@ -1,7 +1,7 @@
 import os
 from fastapi import FastAPI, HTTPException
 from dotenv import load_dotenv
-from google.generativeai import genai
+import google.generativeai as genai
 from app.schemas import QuestionRequest, AnswerResponse
 from app.prompts import SYSTEM_PROMPT
 
